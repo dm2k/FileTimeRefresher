@@ -21,7 +21,7 @@ Module Module1
             Dim orderedFiles = New System.IO.DirectoryInfo(folderDlg.SelectedPath).GetFiles().OrderBy(Function(x) x.CreationTime)
 
             For Each f As System.IO.FileInfo In orderedFiles
-
+                ''
                 System.IO.File.SetLastAccessTime(f.FullName, System.DateTime.Now)
                 System.IO.File.SetLastWriteTime(f.FullName, System.DateTime.Now)
                 'Console.WriteLine(String.Format("{0,-15} {1,12}", f.Name, f.CreationTime.ToString))
