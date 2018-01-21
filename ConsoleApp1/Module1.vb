@@ -22,8 +22,8 @@ Module Module1
 
             For Each f As System.IO.FileInfo In orderedFiles
 
-                'System.IO.File.SetLastAccessTime(f.FullName, System.DateTime.Now)
-                'System.IO.File.SetLastWriteTime(f.FullName, System.DateTime.Now)
+                System.IO.File.SetLastAccessTime(f.FullName, System.DateTime.Now)
+                System.IO.File.SetLastWriteTime(f.FullName, System.DateTime.Now)
                 'Console.WriteLine(String.Format("{0,-15} {1,12}", f.Name, f.CreationTime.ToString))
                 Console.WriteLine(String.Format("{0,-15} {1,12}", f.FullName, f.LastAccessTime.ToString)) ', f.CreationTime.ToString))
 
