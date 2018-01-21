@@ -1,12 +1,12 @@
 # WriteTimeRefresher
 
-A small program that helps to refresh last write time to files in selected folder according their file name.
-That helps to show files in convinient order on some old hardware.
+A small program that refreshes last write time of files in selected folder according their file name order.
 
-Solution contains console and windows forms projects all written in VB.NET.
+It helps show files in alphabetic order on some old hardware.
 
-Also as follows:
+Solution contains console and windows forms projects in VB.NET.
 
+It works as:
 1. Get folder via Folder Dialog
 2. Sort files
 3. Apply Now as LastWriteTime and LastAccessTime for all files
