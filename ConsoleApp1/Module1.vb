@@ -18,7 +18,7 @@ Module Module1
 
             Console.WriteLine(String.Format("Resetting file time in folder '{0}'", folderDlg.SelectedPath))
 
-            Dim orderedFiles = New System.IO.DirectoryInfo(folderDlg.SelectedPath).GetFiles().OrderBy(Function(x) x.CreationTime)
+            Dim orderedFiles = New System.IO.DirectoryInfo(folderDlg.SelectedPath).GetFiles().OrderBy(Function(x) x.Name)
 
             For Each f As System.IO.FileInfo In orderedFiles
                 ''
